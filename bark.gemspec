@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'hurley', '~> 0.2'
+  spec.add_runtime_dependency 'nokogiri', '~> 1.6'
 
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
   spec.add_development_dependency 'bundler', '~> 1.10'
