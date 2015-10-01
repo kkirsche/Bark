@@ -14,7 +14,7 @@ module BarkSpec
 
     it 'should include a default monit host' do
       client = Bark::Client.new
-      expect(client.host).must_equal 'localhost/'
+      expect(client.host).must_equal 'localhost'
     end
 
     it 'should include a default monit port number' do
