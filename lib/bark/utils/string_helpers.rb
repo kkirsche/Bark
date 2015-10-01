@@ -4,6 +4,7 @@ class String
   end
 
   def with_trailing_slash
-    self + '/' if last_character != '/'
+    return self + '/' if last_character != '/'
+    self
   end
 end
