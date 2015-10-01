@@ -11,8 +11,7 @@ module BarkSpec
     it 'should retrieve the current status from Monit' do
       client = Bark::Client.new
       response = client.status.current
-      expect(response).wont_be_nil
-      expect(response).must_be_instance_of Hash
+      expect(response[:monit].keys).must_equal [:server, :platform, :service]
     end
   end
 end

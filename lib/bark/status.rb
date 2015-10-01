@@ -8,7 +8,18 @@ module Bark
 
     def current
       response = @client.get('_status', format: 'xml')
-      document = Hash.from_xml(response.body)
+      validate response
+    end
+
+    private
+
+    def validate(response)
+      if response.status_type == :success
+        document = Hash.from_xml(response.body)
+      else
+        fail StandardError, 'An unknown error occurred.'
+      end
+      document
     end
   end
 end
