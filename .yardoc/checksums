@@ -1,0 +1,9 @@
+lib/bark.rb 6165763fe28b1f20e3390e6a9cb4c4ec0bec5291
+lib/bark/status.rb d34b59d6adf4de918dc9e4fb40c1c9df82c9ef19
+lib/bark/server.rb f8f36c2d66ec39a6478fd4f934043ebcb2d10a6e
+lib/bark/client.rb b1e4e046fdbd172b116e2e2b57912a5085875c5e
+lib/bark/version.rb 5d66e37bbef71d4f0b2e0efadc67e079624150e7
+lib/bark/service.rb 02e27ae1f259706190267ab3d4c880879c49b2a8
+lib/bark/platform.rb f133b170c97c1afa25df0f843b17d202af6c0aa5
+lib/bark/utils/hash_helpers.rb 034b59108996f9db259ab1b0255e486569f3e13d
+lib/bark/utils/string_helpers.rb 7d909b7860f0542f709226d6f8e40ae66be6aaf5
