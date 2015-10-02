@@ -9,7 +9,13 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    autoprefixer-rails (6.0.3)
+      execjs
+      json
     blankslate (2.1.2.4)
+    bootstrap-sass (3.3.5.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.3.0)
     charlock_holmes (0.7.3)
     classifier-reborn (2.0.3)
       fast-stemmer (~> 1.0)
@@ -30,7 +36,6 @@ GEM
       escape_utils (~> 1.1.0)
       mime-types (>= 1.19)
       rugged (>= 0.23.0b)
-    github-markdown (0.6.9)
     github-pages (39)
       RedCloth (= 4.2.9)
       github-pages-health-check (~> 0.2)
@@ -136,10 +141,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   gemoji
   github-linguist
-  github-markdown
   github-pages
+  kramdown
+  safe_yaml
 
 BUNDLED WITH
    1.10.6

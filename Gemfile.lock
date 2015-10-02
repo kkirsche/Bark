@@ -9,7 +9,13 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    autoprefixer-rails (6.0.3)
+      execjs
+      json
     blankslate (2.1.2.4)
+    bootstrap-sass (3.3.5.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.3.0)
     charlock_holmes (0.7.3)
     classifier-reborn (2.0.3)
       fast-stemmer (~> 1.0)
@@ -135,6 +141,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   gemoji
   github-linguist
   github-pages
