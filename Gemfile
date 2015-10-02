@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'github-pages'
+gem 'github-linguist'
+gem 'github-markdown'
+gem 'gemoji'
 
-# Specify your gem's dependencies in bark.gemspec
-gemspec
