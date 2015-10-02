@@ -1,3 +1,5 @@
+# Bark is a client for interacting with the Monit client.
 module Bark
-  VERSION = "0.1.0"
+  # The current version of Bark
+  VERSION = "1.0.0"
 end
