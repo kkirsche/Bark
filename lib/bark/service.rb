@@ -7,12 +7,16 @@ module Bark
       @status = Bark::Status.new client
     end
 
-    def all
-      @status.current[:monit][:service]
-    end
-
-    def id
-      @status.current[:monit][:server][:id]
+    def each
+      response = @status.current[:monit][:service]
+      if response.is_a? Array
+          @services = response.map do |service|
+           service
+          end
+      else
+        @services = [@hash["monit"]["service"]]
+      end
+      @services
     end
 
     private
