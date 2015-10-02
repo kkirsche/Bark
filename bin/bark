@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'bark'
+require 'pp'
+
+client = Bark::Client.new
+
+pp client.status.current
