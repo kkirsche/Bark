@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bark/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'bark'
+  spec.name          = 'barking'
   spec.version       = Bark::VERSION
   spec.authors       = ['Kevin Kirsche']
   spec.email         = ['kev.kirsche@gmail.com']
