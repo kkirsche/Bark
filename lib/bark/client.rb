@@ -2,7 +2,7 @@
 module Bark
   # The Client class is the primary communicator between the program and the
   class Client
-    attr_reader :host, :port, :user, :password, :status, :server, :platform
+    attr_reader :host, :port, :user, :password, :status, :server, :platform, :service
     def initialize(opts = {})
       default_if_opts_nil opts
       @client = Hurley::Client.new "http://#{@user}:#{@password}"\
@@ -10,15 +10,19 @@ module Bark
     end
 
     def status
-      @status ||= Bark::Status.new(@client)
+      @status ||= Bark::Status.new @client
     end
 
     def server
-      @server ||= Bark::Server.new(@client)
+      @server ||= Bark::Server.new @client
     end
 
     def platform
-      @platform ||= Bark::Platform.new(@client)
+      @platform ||= Bark::Platform.new @client
+    end
+
+    def service
+      @service ||= Bark::Service.new @client
     end
 
     private

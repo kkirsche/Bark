@@ -4,6 +4,7 @@ require 'nokogiri'
 # Main App
 require 'bark/client'
 require 'bark/server'
+require 'bark/service'
 require 'bark/status'
 require 'bark/platform'
 # Utilities
