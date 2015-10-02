@@ -6,6 +6,9 @@ module Bark
       @client = client
     end
 
+    # Retrieves the current status of Monit. **Note:** This is the top level API object
+    #
+    # @return [String] `"localhost"`
     def current
       response = @client.get('_status', format: 'xml')
       validate response

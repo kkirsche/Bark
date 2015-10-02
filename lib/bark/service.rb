@@ -7,6 +7,9 @@ module Bark
       @status = Bark::Status.new client
     end
 
+    # Retrieves the services which Monit has running / is monitoring
+    #
+    # @return [Array]
     def each
       response = @status.current[:monit][:service]
       if response.is_a? Array
