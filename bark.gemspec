@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Bark::VERSION
   spec.authors       = ['Kevin Kirsche']
   spec.email         = ['kev.kirsche@gmail.com']
-  spec.license       = 'Apache-2.0)'
+  spec.license       = 'Apache-2.0'
 
   spec.summary       = %q{Monit monitoring made easy!}
   spec.description   = %q{Bark: A Gem For Use By Individuals Looking to Retrieve Data From a Monit Server}
