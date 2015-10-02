@@ -10,7 +10,7 @@ module Bark
 
     # Retrieves the full platform object
     #
-    # @return [`Hash`] ```ruby
+    # @return [`Hash`]
     # {
     #   :name => "Darwin",
     #   :release => "15.0.0",
@@ -20,7 +20,6 @@ module Bark
     #   :memory => "16777216",
     #   :swap => "0"
     # }
-    # ```
     def full
       @status.current[:monit][:platform]
     end
