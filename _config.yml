@@ -8,4 +8,4 @@ twitter_username: kkirsche
 github_username:  kkirsche
 
 # Build settings
-markdown: github-markdown
+markdown: kramdown

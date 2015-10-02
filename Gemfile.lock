@@ -30,7 +30,6 @@ GEM
       escape_utils (~> 1.1.0)
       mime-types (>= 1.19)
       rugged (>= 0.23.0b)
-    github-markdown (0.6.9)
     github-pages (39)
       RedCloth (= 4.2.9)
       github-pages-health-check (~> 0.2)
@@ -138,8 +137,9 @@ PLATFORMS
 DEPENDENCIES
   gemoji
   github-linguist
-  github-markdown
   github-pages
+  kramdown
+  safe_yaml
 
 BUNDLED WITH
    1.10.6
