@@ -33,14 +33,83 @@ require 'barking'
 Create a Bark client:
 ```ruby
 client = Bark::Client.new
-=> #<Bark::Client:0x007fd0aa168fc8 @host="localhost", @port="2812", @user="admin", @password="monit", @client=#<Hurley::Client:0x007fd0aa168d98 @before_callbacks=[], @after_callbacks=[], @url=#<Hurley::Url http://localhost:2812>, @header=#<Hurley::Header {"User-Agent"=>"Hurley v0.2"}>, @connection=nil, @request_options=#<struct Hurley::RequestOptions timeout=nil, open_timeout=nil, boundary=nil, bind=nil, proxy=nil, redirection_limit=nil, query_class=nil>, @ssl_options=#<struct Hurley::SslOptions skip_verification=nil, verify_depth=nil, ca_file=nil, ca_path=nil, client_cert=nil, client_cert_path=nil, private_key=nil, private_key_path=nil, private_key_pass=nil, openssl_client_cert=nil, openssl_client_key=nil, openssl_cert_store=nil, version=nil>>>
+=> #<Bark::Client:0x007fd0aa08c6e0
+ @client=
+  #<Hurley::Client:0x007fd0aa08c3c0
+   @after_callbacks=[],
+   @before_callbacks=[],
+   @connection=nil,
+   @header=#<Hurley::Header {"User-Agent"=>"Hurley v0.2"}>,
+   @request_options=
+    #<struct Hurley::RequestOptions
+     timeout=nil,
+     open_timeout=nil,
+     boundary=nil,
+     bind=nil,
+     proxy=nil,
+     redirection_limit=nil,
+     query_class=nil>,
+   @ssl_options=
+    #<struct Hurley::SslOptions
+     skip_verification=nil,
+     verify_depth=nil,
+     ca_file=nil,
+     ca_path=nil,
+     client_cert=nil,
+     client_cert_path=nil,
+     private_key=nil,
+     private_key_path=nil,
+     private_key_pass=nil,
+     openssl_client_cert=nil,
+     openssl_client_key=nil,
+     openssl_cert_store=nil,
+     version=nil>,
+   @url=#<Hurley::Url http://localhost:2812>>,
+ @host="localhost",
+ @password="monit",
+ @port="2812",
+ @user="admin">
 ```
 
 Use the Bark client:
 ```ruby
 client = Bark::Client.new
 client.status.current
- => {:monit=>{:server=>{:id=>"4674ff31c162bba574525571642b67fd", :incarnation=>"1443740471", :version=>"5.14", :uptime=>"15809", :poll=>"30", :startdelay=>"0", :localhostname=>"JohnDoe-Laptop.com", :controlfile=>"/Users/jdoe/.monitrc", :httpd=>{:address=>"localhost", :port=>"2812", :ssl=>"0"}}, :platform=>{:name=>"Darwin", :release=>"15.0.0", :version=>"Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64", :machine=>"x86_64", :cpu=>"4", :memory=>"16777216", :swap=>"0"}, :service=>{:type=>"5", :name=>"JohnDoe-Laptop.com", :collected_sec=>"1443756275", :collected_usec=>"769042", :status=>"0", :status_hint=>"0", :monitor=>"1", :monitormode=>"0", :pendingaction=>"0", :system=>{:load=>{:avg01=>"1.73", :avg05=>"1.89", :avg15=>"1.83"}, :cpu=>{:user=>"3.8", :system=>"2.6"}, :memory=>{:percent=>"56.4", :kilobyte=>"9466680"}, :swap=>{:percent=>"0.0", :kilobyte=>"0"}}}}}
+ => {:monit=>
+  {:server=>
+    {:id=>"4674ff31c162bba574525571642b67fd",
+     :incarnation=>"1443740471",
+     :version=>"5.14",
+     :uptime=>"16012",
+     :poll=>"30",
+     :startdelay=>"0",
+     :localhostname=>"JohnDoe-Laptop.com",
+     :controlfile=>"/Users/jdoe/.monitrc",
+     :httpd=>{:address=>"localhost", :port=>"2812", :ssl=>"0"}},
+   :platform=>
+    {:name=>"Darwin",
+     :release=>"15.0.0",
+     :version=>
+      "Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64",
+     :machine=>"x86_64",
+     :cpu=>"4",
+     :memory=>"16777216",
+     :swap=>"0"},
+   :service=>
+    {:type=>"5",
+     :name=>"JohnDoe-Laptop.com",
+     :collected_sec=>"1443756456",
+     :collected_usec=>"430689",
+     :status=>"0",
+     :status_hint=>"0",
+     :monitor=>"1",
+     :monitormode=>"0",
+     :pendingaction=>"0",
+     :system=>
+      {:load=>{:avg01=>"2.16", :avg05=>"1.87", :avg15=>"1.81"},
+       :cpu=>{:user=>"10.9", :system=>"5.0"},
+       :memory=>{:percent=>"54.1", :kilobyte=>"9080656"},
+       :swap=>{:percent=>"0.0", :kilobyte=>"0"}}}}}
 ```
 
 ## Development
