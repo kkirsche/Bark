@@ -120,5 +120,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/kkirsche/bark.
+Questions, comments, bug reports, and pull requests are all welcomed on Github at https://github.com/kkirsche/bark.
+
+## Authors
+
+* [Kevin Kirsche](https://github.com/kkirsche)
 
